@@ -3,6 +3,7 @@ import { Game } from 'src/models/game';
 
 
 
+
 @Component({
   selector: 'app-game',
   templateUrl: './game.component.html',
@@ -11,17 +12,19 @@ import { Game } from 'src/models/game';
 export class GameComponent implements OnInit {
  
   pickCardAnimation = false;
-  game : Game;
+  game: Game | undefined;
+  
 
   constructor() { }
-  
-  ngOnInit(): void{
+    ngOnInit(): void{
     this.newGame();
   }
 
   
   newGame() {
-      this.game = new Game();
+    this.game = new Game();
+    console.log(this.game);
+    
   }
   
   takeCard() {
