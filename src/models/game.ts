@@ -30,4 +30,16 @@ shuffle(array: string[]): void {
     }
 }
 
+    
+    public toJson() {
+        return {
+            players: this.players,
+            stack: this.stack,
+            playedCards: this.playedCards,
+            currentPlayer: this.currentPlayer
+        };
+    
+}
+    
+    
 }

@@ -15,6 +15,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import { GameInfoComponent } from './game-info/game-info.component';
  import {MatCardModule} from '@angular/material/card';
+import { environment } from 'src/environments/environment';
+import { AngularFireModule } from '@angular/fire/compat';
+
 
 
 @NgModule({
@@ -37,8 +40,8 @@ import { GameInfoComponent } from './game-info/game-info.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-  
-    ],
+    AngularFireModule.initializeApp(environment.firebase),
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
