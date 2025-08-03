@@ -1,7 +1,25 @@
+
+html {
+     height: 100%; 
+     overflow: hidden;
+    }
+
 body{
     margin: 0;
-    
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    overflow: hidden;
+   
 }
+@media (max-width :720px){
+       
+   .hide-mobile{
+       display:none ;
+         }
+    }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+    @media (min-width :720px){
+     .hide-desktop{
+        display:none ;
+     }
+    }
